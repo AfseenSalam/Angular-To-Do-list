@@ -1,0 +1,22 @@
+.completed{
+    text-decoration: line-through;
+    color: gray; 
+}
+/* Set the font for the body */
+
+  /* The container for the to-do list */
+  .container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75); /* Box shadow effect */
+  }
+  
+  /* Completed tasks have a line-through */
+  .completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+ 
+  
