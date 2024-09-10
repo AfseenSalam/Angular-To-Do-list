@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { Todo } from './module/todo';
-import { DecimalPipe } from '@angular/common';
+import { CommonModule, DecimalPipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,FormsModule,DecimalPipe],
+  imports: [CommonModule,RouterOutlet,FormsModule,DecimalPipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

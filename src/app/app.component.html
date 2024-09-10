@@ -4,12 +4,9 @@
       <h1>Todo List</h1>
       <div class="mb-3 ">
       <input type="text" class="form-control" id="findTask" [(ngModel)] = "findTask" placeholder="Filter your TO-Dos">
-      <ul class="list-group mt-2" *ngIf="findTask.length > 0 && suggestion().length>0" >
-       
-          <li class="list-group-item"  *ngFor="let s of suggestion()" (click)="selectTask(s)">
-           
-            {{ s.task }} ({{ s.duration }} min)
-                       
+      <ul class="list-group mt-2" *ngIf="findTask.length > 0 && suggestion(findTask).length > 0" >
+        <li class="list-group-item"  *ngFor="let s of suggestion(findTask)" (click)="selectTask(s)">
+          {{ s.task }} ({{ s.duration }} min) 
           </li>     
       </ul>
       </div>
